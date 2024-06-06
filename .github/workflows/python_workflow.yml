@@ -14,7 +14,7 @@ jobs:
         uses: conda-incubator/setup-miniconda@v2
         with:
           activate-environment: myenv  # Specify the name of your conda environment
-          environment-file: environment.yml  # Path to environment file if you have one
+          environment-file: jupyterlab.yml  # Path to environment file if you have one
           
       - name: Install dependencies
         run: conda install --file requirements.txt  # Install dependencies from requirements.txt

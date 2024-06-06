@@ -47,7 +47,7 @@ from sklearn.metrics import mean_squared_error, mean_absolute_error
 # In[4]:
 
 
-df = pd.read_csv('/Users/christinaorengo/Downloads/Untitled-project(3)/batting.csv', na_values=" ")
+df = pd.read_csv('batting.csv', na_values=" ")
 
 
 # In this dataset, batting average is not included as a column despite it being one of the oldest metrics used to determine a players value. Below, we calculate the batting average by taking the number of hits (h) and dividing it by the number of attempts ((ab) which stands for 'at bats') the player had. Batting average is traditionally rounded to 3 decimal places. We then store these values as a new column in the dataframe.

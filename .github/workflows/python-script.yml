@@ -18,8 +18,14 @@ jobs:
       - name: Set up Python
         uses: actions/setup-python@v2
         with:
-          python-version: '3.9'  # Specify the Python version you want to use
+          python-version: '3.10'  # Specify the Python version you want to use
       - name: Install dependencies
-        run: pip install -r requirements.txt  # If you have any dependencies
+        run: 
+          pip install --upgrade pip
+          pip install --upgrade matplotlib
+          pip install --upgrade numpy
+          pip install --upgrade pandas
+          pip install --upgrade jinja2
+          pip install -r requirements.txt  # If you have any dependencies
       - name: Run script
-        run: python script.py  # Replace with the path to your Python script
+        run: python proj_gidp_ba.py  # Replace with the path to your Python script

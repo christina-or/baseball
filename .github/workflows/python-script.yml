@@ -26,6 +26,7 @@ jobs:
           pip install --upgrade numpy
           pip install --upgrade pandas
           pip install --upgrade jinja2
+          pip install vega_datasets
           pip install -r requirements.txt  # If you have any dependencies
       - name: Run script
         run: python proj_gidp_ba.py  # Replace with the path to your Python script

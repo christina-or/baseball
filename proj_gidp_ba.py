@@ -14,23 +14,6 @@
 # In[1]:
 
 
-get_ipython().system('pip install --upgrade pip')
-get_ipython().system('pip install vega_datasets')
-get_ipython().system('pip install --upgrade matplotlib')
-get_ipython().system('pip install --upgrade numpy')
-get_ipython().system('pip install --upgrade pandas')
-get_ipython().system('pip install --upgrade jinja2')
-
-
-# In[2]:
-
-
-get_ipython().system('pip cache purge')
-
-
-# In[3]:
-
-
 import pandas as pd
 import numpy as np
 import altair as alt

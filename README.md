@@ -16,8 +16,6 @@ To install the necessary packages, use the following command:
 
 ```
 pip install -r requirements.txt
-
-df = pd.read_csv('/work/batting.csv', na_values=" ") 
 ```
 
 ## Introduction
@@ -26,6 +24,7 @@ In this dataset, batting average is not included as a column despite it being on
 Below, we calculate the batting average by taking the number of hits (h) and dividing it by the number of attempts ((ab) which stands for 'at bats') the player had. Batting average is traditionally rounded to 3 decimal places. We then store these values as a new column in the dataframe. 
 
 ```
+df = pd.read_csv('/work/batting.csv', na_values=" ") 
 df['ba'] = round(df['h']/df['ab'],3) 
 ```
 

@@ -1,18 +1,17 @@
-<h3><center><b>Baseball's GIDP Metric Affect on Batting Average</h3></center></b>
+<h1><center><b>Baseball's GIDP Metric Affect on Batting Average</h1></center></b>
 <center>By Christina Orengo</center>
 
-
-#### Description
+## Description
 This project involves data analysis using Deepnote and Python.
 
-#### Table of Contents
+## Table of Contents
 - [Installation](#installation)
 - [Introduction](#introduction)
 - [Predictive Modeling](#predictive-modeling)
 - [Summary](#summary)
 - [References](#references)
 
-#### Installation
+## Installation
 To install the necessary packages, use the following command:
 
 ```
@@ -21,7 +20,7 @@ pip install -r requirements.txt
 df = pd.read_csv('/work/batting.csv', na_values=" ") 
 ```
 
-#### Introduction
+## Introduction
 In this dataset, batting average is not included as a column despite it being one of the oldest metrics used to determine a players value.
 
 Below, we calculate the batting average by taking the number of hits (h) and dividing it by the number of attempts ((ab) which stands for 'at bats') the player had. Batting average is traditionally rounded to 3 decimal places. We then store these values as a new column in the dataframe. 
@@ -69,7 +68,7 @@ df_sub.head()
 
 <img src="images/df_sub_head.png" alt="df_sub_head" width="500"/>
 
-#### Predictive Modeling
+## Predictive Modeling
 
 Next, we will be setting our parameters and fitting/predicting using KNeighborsRegressor. We will also scale the input information as each category is in different metrics. 
 
@@ -219,14 +218,14 @@ c1
 
 Finally, we see that the more often a player grounds into a double play, the more likely they are to hit around .300 which is on the high end and a number most players strive for. It is the opposite of what I would have thought the outcome would be. I hypothesized that should a player ground into more double plays, the lower the batting average would be as it results in more outs. However that doesn't seem to be the case according to this model.
 
-#### Summary 
+## Summary 
 
 My hypothesis was that the more often a player grounds into a double play which results in an out, the lower the batting average 
 would be. However there appears to be an opposite affect on batting average than expected when looking at the altair chart 
 above. Batting averages appear to predict a steady batting average near .300 the more a player grounds into a double play. There 
 are many other factors at play in the game of baseball so the results are not exactly conclusive. 
 
-#### References 
+## References 
 
 
 - The dataset was found on Kaggle: [The History of Baseball](https://www.kaggle.com/datasets/seanlahman/the-history-of-baseball)

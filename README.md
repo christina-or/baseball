@@ -1,5 +1,5 @@
 <h1><center><b>Baseball's GIDP Metric Affect on Batting Average</h1></center></b>
-<center>By Christina Orengo</center>
+<center>By Christina O.</center>
 
 ## Description
 This project involves data analysis using Deepnote and Python to predict a player's batting average based off of the GIDP (ground into double play) metric.

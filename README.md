@@ -2,7 +2,7 @@
 <center>By Christina Orengo</center>
 
 ## Description
-This project involves data analysis using Deepnote and Python.
+This project involves data analysis using Deepnote and Python to predict a player's batting average based off of the GIDP (ground into double play) metric.
 
 ## Table of Contents
 - [Installation](#installation)
